@@ -1,0 +1,21 @@
+header {
+    background-color: rgb(255, 153, 0);
+    color: aliceblue;
+    text-shadow: 2px 2px rgba(15, 14, 11, 0.705);
+    padding: 5px;
+}
+
+img {
+    border-radius: 100%;
+}
+
+button {
+    width: 80px;
+    background-color: brown;
+    border: none;
+    color: aliceblue;
+}
+
+button:hover {
+    background-color: rgb(122, 31, 31);
+}

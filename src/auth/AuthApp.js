@@ -9,7 +9,7 @@ class AuthApp extends Component {
     render() {
         const dom = this.renderDOM();
 
-        const header = new Header({ title: 'Sign Up for Pokechat' });
+        const header = new Header({ title: 'Sign Up for a Chat' });
         const main = dom.querySelector('main');
         dom.insertBefore(header.render(), main);
 
@@ -29,7 +29,7 @@ class AuthApp extends Component {
         return /*html*/`
             <div>
                 <main>
-                    <p>Get signed in to use the favorite movie app!</p>
+                    <p>Sign in or Creat new acount</p>
                     <div id="firebaseui-auth-container">
                         <!--firebaseui auth will go here...-->
                     </div>
