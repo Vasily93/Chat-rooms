@@ -19,7 +19,7 @@ class App extends Component {
         return /*html*/ `
             <div>
                 <main>
-                <h1>im here</h1>
+                <h1>WELCOME TO AWESOME CHATS</h1>
                 </main>
             </div>
         `;
