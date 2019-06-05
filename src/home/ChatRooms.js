@@ -16,7 +16,7 @@ class ChatRooms extends Component {
     renderTemplate() {
         return /*html*/ `
             <ul id="room-chats">
-                <h3>Choose room or add your own</h3>
+                <h3>Chat     Rooms List</h3>
             </ul>
         `;
     }

@@ -1,6 +1,7 @@
 import Component from '../Component.js';
 import Header from '../shared/Header.js';
 import ChatRooms from '../home/ChatRooms.js';
+import AddRoom from './AddRoom.js';
 
 class App extends Component {
 
@@ -12,10 +13,15 @@ class App extends Component {
 
         const main = dom.querySelector('main');
         dom.insertBefore(headerDOM, main);
+        
+        const addRoom = new AddRoom();
+        const addRoomDOM = addRoom.render();
+        main.appendChild(addRoomDOM);
 
         const chatRooms = new ChatRooms();
         const chatRoomsDOM = chatRooms.render();
         main.appendChild(chatRoomsDOM);
+
 
         return dom;
     }
