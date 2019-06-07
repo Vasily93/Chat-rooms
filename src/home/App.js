@@ -1,7 +1,8 @@
 import Component from '../Component.js';
 import Header from '../shared/Header.js';
-import ChatRooms from '../home/ChatRooms.js';
-import AddRoom from './AddRoom.js';
+import AddRoom from '../rooms/AddRoom.js';
+import ChatRooms from '../rooms/ChatRooms.js';
+import { userRoomsRef } from '../services/firebase.js';
 
 class App extends Component {
 
@@ -18,9 +19,15 @@ class App extends Component {
         const addRoomDOM = addRoom.render();
         main.appendChild(addRoomDOM);
 
-        const chatRooms = new ChatRooms();
+        const chatRooms = new ChatRooms({ rooms: [] });
         const chatRoomsDOM = chatRooms.render();
         main.appendChild(chatRoomsDOM);
+
+        userRoomsRef.on('value', snapshot => {
+            const value = snapshot.val();
+            const rooms = value ? Object.values(value) : [];
+            chatRooms.update({ rooms });
+        });
 
 
         return dom;
