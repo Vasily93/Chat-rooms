@@ -1,0 +1,27 @@
+
+li - <a index.html?> + key + button
+tdd item - render template from object - 
+const room = this.props.room 
+room = name/id/key
+
+build on fitrebase / roomApp getting info form fb / 
+db.ref / .on / snapshot / cl snapshot / fb gives i / 
+.val / update({}) /
+
+list / cosnt dom / forEach rooms-item-append / 
+
+add / template / import ref / const form /
+/ addEvent / prevent / push / set / key, cal, uid / 
+
+clear input - .then => form.reset
+
+remove / in item / render dom / button X.addev => ref.
+child-key.remove / 
+
+if uid === owner
+button = comment out
+
+
+
+
+
